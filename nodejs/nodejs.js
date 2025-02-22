@@ -19,8 +19,8 @@ const dir3 = './folder3'
 fse.ensureDirSync(dir3)
 console.log ("created the directory 'folder3'");
 
-fse.moveSync('./folder2/file1.txt', './folder3/file1.txt')
-console.log ("moved 'file1.txt' from the directory 'folder2' to the directory 'folder3'");
+fse.copySync('./folder2/file1.txt', './folder3/file1.txt')
+console.log ("copied 'file1.txt' from the directory 'folder2' to the directory 'folder3'");
 
 fse.removeSync('./folder1')
 fse.removeSync('./folder2')
