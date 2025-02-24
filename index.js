@@ -46,7 +46,7 @@ console.log (c / b);
 console.log("Вторая часть задания с преобразованиями типов через объявление переменной");
 //Выполнить явное преобразование(number, string, boolean)
 
-let value = 0;
+let value = 1;
 console.log(typeof value); // number
 console.log(value); 
 
