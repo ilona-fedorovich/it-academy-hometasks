@@ -9,8 +9,27 @@ function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min) + min);
+} //функция рандома для вывода целых чисел
+
+function breakNumbs (number, parts) {
+    const numbMain = number;
+    const numbBreak = parts;
+    const randomArrNumbs = []
+
+    for (let i = numbBreak; i < numbMain / 2; i++) {
+         let newNum = getRandomInt(0, numbMain) / 2;
+        if (numbMain) 
+            {randomArrNumbs.push(newNum)}
+    }
+
+         let sum = randomArrNumbs.reduce(function(a, b){
+            return a + b;
+        }, 0);
+
+
+    return {number, randomArrNumbs, sum}
 }
 
-function breakNumber () {
+const randomInit = breakNumbs(20.55, 5);
+console.log(randomInit)
 
-}

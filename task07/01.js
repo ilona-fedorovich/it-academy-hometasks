@@ -27,7 +27,7 @@ function countScoreGame (player, throws) {
         }
     }
 
-    return winner;
+    return {winner, winnerScore};
 }
 
 console.log(countScoreGame(3, 3));
