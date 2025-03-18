@@ -4,7 +4,6 @@
 
 function checkNumbers(string) {
     let stringNum = string;
-    string = +string;
     let left = 0;
     let right = 0;
 
@@ -22,4 +21,4 @@ function checkNumbers(string) {
 
   }
   
-  console.log(checkNumbers('0550'));
+  console.log(checkNumbers('055'));
