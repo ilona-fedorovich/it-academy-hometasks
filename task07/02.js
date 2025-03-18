@@ -5,31 +5,23 @@
 // а. числа изначальное число целое, числа разбивки - целые (4,6,5)
 // б. числа разбивки дробные с 2 знаками после запятой 4.55, 5.20, 5.25)
 
-function getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min) + min);
-} //функция рандома для вывода целых чисел
+function breakNumbs(number, parts) {
 
-function breakNumbs (number, parts) {
-    const numbMain = number;
-    const numbBreak = parts;
-    const randomArrNumbs = []
-
-    for (let i = numbBreak; i < numbMain / 2; i++) {
-         let newNum = getRandomInt(0, numbMain) / 2;
-        if (numbMain) 
-            {randomArrNumbs.push(newNum)}
+    let randomArrNumbs = [];
+  
+    for (let i = 0; i < parts - 1; i++) {
+      let randomPart = Math.floor(Math.random() * number); 
+      randomArrNumbs.push(randomPart);
+      number -= randomPart;
     }
+  
+    randomArrNumbs.push(number);
 
-         let sum = randomArrNumbs.reduce(function(a, b){
-            return a + b;
-        }, 0);
+    let sum = randomArrNumbs.reduce(function(a, b){
+        return a + b;
+    }, 0);
 
+    return {randomArrNumbs, sum, parts};
+  }
 
-    return {number, randomArrNumbs, sum}
-}
-
-const randomInit = breakNumbs(20.55, 5);
-console.log(randomInit)
-
+  console.log(breakNumbs(20, 3));
