@@ -1,0 +1,23 @@
+{
+  "name": "it-academy-hometasks",
+  "version": "1.0.0",
+  "description": "repository for hometasks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilona-fedorovich/it-academy-hometasks.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ilona-fedorovich/it-academy-hometasks/issues"
+  },
+  "homepage": "https://github.com/ilona-fedorovich/it-academy-hometasks#readme",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}
